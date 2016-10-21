@@ -10,8 +10,8 @@ namespace nkyUI.Controls
 {
     public class KYUIWindow : Window, IStyleable
     {
-        public static readonly AvaloniaProperty<Control> TitleBarContentProperty =
-            AvaloniaProperty.Register<KYUIWindow, Control>(nameof(TitleBarContent));
+        public static readonly AvaloniaProperty<Control> WindowCommandsProperty =
+            AvaloniaProperty.Register<KYUIWindow, Control>(nameof(WindowCommands));
 
         private Grid bottomHorizontalGrip;
         private Grid bottomLeftGrip;
@@ -31,10 +31,10 @@ namespace nkyUI.Controls
         private Grid topLeftGrip;
         private Grid topRightGrip;
 
-        public Control TitleBarContent
+        public Control WindowCommands
         {
-            get { return GetValue(TitleBarContentProperty); }
-            set { SetValue(TitleBarContentProperty, value); }
+            get { return GetValue(WindowCommandsProperty); }
+            set { SetValue(WindowCommandsProperty, value); }
         }
 
         Type IStyleable.StyleKey => typeof(KYUIWindow);
