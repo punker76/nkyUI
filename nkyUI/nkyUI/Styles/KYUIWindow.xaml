@@ -25,7 +25,11 @@
                       </Grid>
                       <!--<ContentPresenter Grid.Column="1" Grid.ColumnSpan="1" Content="{TemplateBinding TitleBarContent}" />-->
                       <StackPanel Grid.Column="1" Grid.ColumnSpan="1" Orientation="Horizontal" HorizontalAlignment="Right">
-                        <ContentPresenter Content="{TemplateBinding TitleBarContent}" />
+                        <ContentPresenter Content="{TemplateBinding TitleBarContent}">
+                          <ContentPresenter.Styles>
+                            <StyleInclude Source="resm:nkyUI.Styles.TitleBarContent.xaml?assembly=nkyUI" />
+                          </ContentPresenter.Styles>
+                        </ContentPresenter>
                       </StackPanel>
                       <!--Window Controls (Minimize, Maximize, Close)-->
                       <Grid Grid.Column="2" HorizontalAlignment="Right" Margin="5 4 0 5">
