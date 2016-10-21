@@ -23,7 +23,10 @@
                           <TextBlock Text="{TemplateBinding Title}" Margin="20 6 5 0" Foreground="{StyleResource AccentBaseColorInverseNeutralBrush}" FontWeight="SemiBold" />
                         </StackPanel>
                       </Grid>
-                      <ContentPresenter Grid.Column="1" Grid.ColumnSpan="1" Content="{TemplateBinding TitleBarContent}" />
+                      <!--<ContentPresenter Grid.Column="1" Grid.ColumnSpan="1" Content="{TemplateBinding TitleBarContent}" />-->
+                      <StackPanel Grid.Column="1" Grid.ColumnSpan="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <ContentPresenter Content="{TemplateBinding TitleBarContent}" />
+                      </StackPanel>
                       <!--Window Controls (Minimize, Maximize, Close)-->
                       <Grid Grid.Column="2" HorizontalAlignment="Right" Margin="5 4 0 5">
                         <StackPanel Orientation="Horizontal">
