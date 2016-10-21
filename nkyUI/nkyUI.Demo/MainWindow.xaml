@@ -1,11 +1,12 @@
 ﻿<kControls:KYUIWindow xmlns="https://github.com/avaloniaui"
-        xmlns:kControls="clr-namespace:nkyUI.Controls;assembly=nkyUI"
-        MinWidth="500"
-        MinHeight="300">
+                      xmlns:kControls="clr-namespace:nkyUI.Controls;assembly=nkyUI"
+                      Icon="resm:nkyUI.Demo.icon.ico?assembly=nkyUI.Demo"
+                      MinWidth="500"
+                      MinHeight="300">
     <kControls:KYUIWindow.WindowCommands>
         <Button Content="Button" />
     </kControls:KYUIWindow.WindowCommands>
-    
+
     <Grid Margin="20">
         <TextBlock>Hello world!</TextBlock>
         <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,25,0,0" />

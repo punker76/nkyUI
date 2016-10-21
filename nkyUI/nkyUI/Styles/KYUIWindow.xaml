@@ -13,11 +13,13 @@
               <Grid Grid.Row="0" Grid.RowSpan="5" Margin="-4 0" Grid.Column="1" RowDefinitions="Auto * Auto" ColumnDefinitions="Auto,Auto,*,Auto,Auto">
                 <Grid Grid.Row="1" Margin="-4" Grid.Column="0" Grid.ColumnSpan="5" Background="{TemplateBinding Background}">
                   <Grid Margin="4 0" RowDefinitions="Auto, *">
+                    <!--TitleBar-->
                     <Grid ColumnDefinitions="130,*,100" Name="titlebar" Background="{StyleResource AccentBaseColorBrush}">
                       <Grid Margin="5 2.5 5 5">
                         <StackPanel Orientation="Horizontal">
-                          <!--Close icon?-->
-                          <Panel Height="12" Width="12" Name="icon" Background="Gray">
+                          <!--Icon-->
+                          <Panel Height="20" Width="20" Name="icon" Background="LightGray">
+                            <Image Source="{TemplateBinding Icon}" />
                           </Panel>
                           <!--Foreground: {TemplateBinding Foreground} ?-->
                           <TextBlock Text="{TemplateBinding Title}" Margin="20 6 5 0" Foreground="{StyleResource AccentBaseColorInverseNeutralBrush}" FontWeight="SemiBold" />
