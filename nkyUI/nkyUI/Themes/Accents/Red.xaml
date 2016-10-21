@@ -1,0 +1,10 @@
+﻿<Style xmlns="https://github.com/avaloniaui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       xmlns:mut="https://github.com/avaloniaui/mutable"
+       xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <Style.Resources>
+    <!--Brushes-->
+    <SolidColorBrush x:Key="AccentBaseColorBrush">#FFE51400</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentBaseColorInverseNeutralBrush">#FFFDFDFD</SolidColorBrush>
+  </Style.Resources>
+</Style>
