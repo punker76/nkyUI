@@ -1,0 +1,6 @@
+﻿<Styles xmlns="https://github.com/avaloniaui">
+  <Style Selector="ContentControl">
+    <Setter Property="Background" Value="{StyleResource ThemeBackgroundBrush}" />
+    <Setter Property="Foreground" Value="{StyleResource ThemeForegroundBrush}" />
+  </Style>
+</Styles>

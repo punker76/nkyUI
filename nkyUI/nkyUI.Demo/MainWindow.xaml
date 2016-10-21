@@ -1,0 +1,8 @@
+﻿<kControls:KYUIWindow xmlns="https://github.com/avaloniaui"
+        xmlns:kControls="clr-namespace:nkyUI.Controls;assembly=nkyUI"
+        MinWidth="500"
+        MinHeight="300">
+  <Grid Margin="20">
+    <TextBlock>Hello world!</TextBlock>
+  </Grid>
+</kControls:KYUIWindow>

@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nkyUI", "nkyUI\nkyUI.csproj", "{D5EFB869-2B27-43B9-BB32-4650CC99FA33}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{6A000F4D-171C-44D2-8462-A34E61628D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nkyUI.Demo", "nkyUI.Demo\nkyUI.Demo.csproj", "{1F77D1EC-CD7D-4EE2-9E39-50104CCE2885}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{D5EFB869-2B27-43B9-BB32-4650CC99FA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5EFB869-2B27-43B9-BB32-4650CC99FA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5EFB869-2B27-43B9-BB32-4650CC99FA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F77D1EC-CD7D-4EE2-9E39-50104CCE2885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F77D1EC-CD7D-4EE2-9E39-50104CCE2885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F77D1EC-CD7D-4EE2-9E39-50104CCE2885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F77D1EC-CD7D-4EE2-9E39-50104CCE2885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F77D1EC-CD7D-4EE2-9E39-50104CCE2885} = {6A000F4D-171C-44D2-8462-A34E61628D28}
 	EndGlobalSection
 EndGlobal

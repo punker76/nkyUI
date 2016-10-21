@@ -1,0 +1,6 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:local="clr-namespace:nkyUI.Styles;assembly=nkyUI">
+  <!--Master styles for all nkyUI controls-->
+  <StyleInclude Source="resm:nkyUI.Styles.KYUIWindow.xaml?assembly=nkyUI" />
+  <StyleInclude Source="resm:nkyUI.Styles.ContentControl.xaml?assembly=nkyUI" />
+</Styles>
