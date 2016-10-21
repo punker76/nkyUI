@@ -18,7 +18,8 @@
                         <StackPanel Orientation="Horizontal">
                           <Panel Height="12" Width="12" Name="icon" Background="Gray">
                           </Panel>
-                          <TextBlock Text="{TemplateBinding Title}" Margin="20 6 5 0" Foreground="{TemplateBinding Foreground}" />
+                          <!--Foreground: {TemplateBinding Foreground} ?-->
+                          <TextBlock Text="{TemplateBinding Title}" Margin="20 6 5 0" Foreground="{StyleResource ThemeForegroundBrightBrush}" />
                         </StackPanel>
                       </Grid>
                       <ContentPresenter Grid.Column="1" Grid.ColumnSpan="1" Content="{TemplateBinding TitleBarContent}" />
