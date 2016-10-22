@@ -61,7 +61,7 @@
                     </Grid>
                     <Grid Grid.Row="1">
                       <ContentPresenter Name="PART_ContentPresenter" Content="{TemplateBinding Content}" Margin="{TemplateBinding Padding}" />
-                      <Grid Name="overlayBox" Opacity="0" ZIndex="-1" Background="#88000000">
+                      <Grid Name="overlayBox" Opacity="0" ZIndex="-1" Background="#99000000">
                         <Grid Margin="0,40,0,40" Background="{StyleResource ThemeBackgroundBrush}">
                           <Grid Name="overlayDialogContainer" Margin="20">
 
