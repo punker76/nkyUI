@@ -62,9 +62,11 @@
                     <Grid Grid.Row="1">
                       <ContentPresenter Name="PART_ContentPresenter" Content="{TemplateBinding Content}" Margin="{TemplateBinding Padding}" />
                       <Grid Name="overlayBox" Opacity="0" ZIndex="-1" Background="#88000000">
-                        <Grid Name="overlayDialogContainer" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
-                          <TextBlock Name="overlayDialogTitle" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" FontWeight="SemiBold" />
-                          <TextBlock Name="overlayDialogText" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,30,0,0" />
+                        <Grid Margin="0,40,0,40" Background="{StyleResource ThemeBackgroundBrush}">
+                          <Grid Name="overlayDialogContainer" Margin="20">
+                            <TextBlock Name="overlayDialogTitle" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontWeight="SemiBold" />
+                            <TextBlock Name="overlayDialogText" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,35,0,0" />
+                          </Grid>
                         </Grid>
                       </Grid>
                     </Grid>
