@@ -1,10 +1,11 @@
-﻿using ReactiveUI;
+﻿using nkyUI.Demo.Helpers;
+using ReactiveUI;
 using System;
 using System.Reactive.Linq;
 
 namespace nkyUI.Demo.VM
 {
-    internal class MainWindowVM
+    internal class MainWindowVM : WindowViewModel
     {
         public ReactiveCommand<object> DoSomethingCoolCommand { get; }
 

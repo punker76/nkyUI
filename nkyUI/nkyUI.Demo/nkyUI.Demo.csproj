@@ -172,6 +172,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\IView.cs" />
+    <Compile Include="Helpers\WindowViewModel.cs" />
     <Compile Include="VM\MainWindowVM.cs" />
     <EmbeddedResource Include="App.xaml" />
     <Compile Include="App.xaml.cs">

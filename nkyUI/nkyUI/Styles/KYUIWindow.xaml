@@ -81,6 +81,8 @@
               <Grid Background="Transparent" Width="4" Height="10" Grid.Column="2" Name="topRightGrip" Cursor="TopRightCorner" />
               <Grid Background="Transparent" Width="4" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Cursor="SizeWestEast" Name="rightVerticalGrip" />
               <Grid Background="Transparent" Width="4" Height="10" Grid.Row="4" Grid.Column="2" Name="bottomRightGrip" Cursor="BottomRightCorner" />
+
+              <Grid Name="overlayBox" Opacity="0" ZIndex="-1" Background="#66000000" />
             </Grid>
           </AdornerDecorator>
         </Border>
