@@ -7,6 +7,8 @@ Neptunium kyUI - UI styles for Avalonia
 
 ## Using the theme - Quick Start
 
+First, reference the `nkyUI` library.
+
 Include styles in `App.xaml` like this:
 
 ```xml
