@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>nkyUI</id>
+        <version>0.1-beta1</version>
+        <title>nkyUI for Avalonia</title>
+        <authors>0xFireball</authors>
+        <owners>0xFireball</owners>
+        <licenseUrl>https://raw.githubusercontent.com/0xFireball/nkyUI/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/0xFireball/nkyUI</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>nkyUI is a modern UI theme for Avalonia</description>
+        <summary>nkyUI for Avalonia</summary>
+        <releaseNotes>First beta release!</releaseNotes>
+        <copyright>Copyright © 0xFireball, IridiumIon Software 2016</copyright>
+        <language>en-US</language>
+        <tags>Avalonia, XAML, Theme</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.5.2">
+                <dependency id="Avalonia" version="0.4.0" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\nkyUI\nkyUI\bin\Release\nkyUI.dll" target="lib\nkyUI.dll" />
+    </files>
+</package>
