@@ -1,16 +1,18 @@
 ﻿<kControls:KYUIWindow xmlns="https://github.com/avaloniaui"
                       xmlns:kControls="clr-namespace:nkyUI.Controls;assembly=nkyUI"
                       Icon="resm:nkyUI.Demo.icon.ico?assembly=nkyUI.Demo"
+                      Title="nkyUI Demo"
                       Width="600"
                       Height="400"
                       MinWidth="500"
                       MinHeight="300">
     <kControls:KYUIWindow.WindowCommands>
-        <Button Content="Button" />
+        <Button Content="TitleBar Button" />
     </kControls:KYUIWindow.WindowCommands>
 
     <Grid Margin="20">
         <TextBlock>Hello world!</TextBlock>
         <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,25,0,0" />
+        <CheckBox Content="A Checkbox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,60,0,0" />
     </Grid>
 </kControls:KYUIWindow>

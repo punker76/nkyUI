@@ -10,7 +10,7 @@ namespace nkyUI.Demo
             this.InitializeComponent();
             App.AttachDevTools(this);
         }
-
+            
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);

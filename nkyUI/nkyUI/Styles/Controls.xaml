@@ -4,4 +4,5 @@
   <StyleInclude Source="resm:nkyUI.Styles.KYUIWindow.xaml?assembly=nkyUI" />
   <StyleInclude Source="resm:nkyUI.Styles.ContentControl.xaml?assembly=nkyUI" />
   <StyleInclude Source="resm:nkyUI.Styles.Button.xaml?assembly=nkyUI" />
+  <StyleInclude Source="resm:nkyUI.Styles.CheckBox.xaml?assembly=nkyUI" />
 </Styles>

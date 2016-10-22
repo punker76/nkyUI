@@ -1,7 +1,7 @@
 ﻿<Styles xmlns="https://github.com/avaloniaui"
         xmlns:local="clr-namespace:nkyUI.Styles;assembly=nkyUI">
   <!--Button control styles-->
-  <Style Selector="Button">
+  <Style Selector="CheckBox">
     <Setter Property="Background" Value="{StyleResource AccentColor}" />
     <Setter Property="BorderBrush" Value="{StyleResource AccentColor2}" />
     <Setter Property="BorderThickness" Value="1" />
