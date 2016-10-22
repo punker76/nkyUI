@@ -10,6 +10,7 @@
 
     <!--A neutral color (black or white) that should be used against a background of the base accent color-->
     <SolidColorBrush x:Key="AccentBaseColorInverseNeutralBrush">#FFFDFDFD</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentBaseColorInverseNeutralBrushFaded">#99FDFDFD</SolidColorBrush>
 
     <!--A callout color-->
     <SolidColorBrush x:Key="HighlightColorBrush">#FFA90E00</SolidColorBrush>

@@ -9,7 +9,13 @@ Neptunium kyUI - UI styles for Avalonia
 
 First, reference the `nkyUI` library.
 
-Include styles in `App.xaml` like this:
+### Include styles in `App.xaml`:
+
+Pick a base theme: (`BaseLight`, `BaseDark`)
+
+Pick an accent: (`Red`, `Blue`) [more soon!]
+
+Add the styles accordingly:
 
 ```xml
 <Application xmlns="https://github.com/avaloniaui">
@@ -25,6 +31,8 @@ Include styles in `App.xaml` like this:
 ```
 
 This will load the nkyUI themes into your app.
+
+### Update window
 
 Next, open the `.xaml` file for the window you want to theme.
 Add the following namespace:

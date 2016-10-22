@@ -5,11 +5,11 @@
   <Style Selector="Button">
     <Setter Property="BorderThickness" Value="0" />
     <Setter Property="Background" Value="Transparent" />
-    <Setter Property="Foreground" Value="{StyleResource ThemeForegroundLightBrush}" />
+    <Setter Property="Foreground" Value="{StyleResource AccentBaseColorInverseNeutralBrushFaded}" />
     <Setter Property="FontWeight" Value="SemiBold" />
   </Style>
   <Style Selector="Button:pointerover /template/ ContentPresenter">
-    <Setter Property="TextBlock.Foreground" Value="{StyleResource ThemeForegroundBrightBrush}" />
+    <Setter Property="TextBlock.Foreground" Value="{StyleResource AccentBaseColorInverseNeutralBrush}" />
     <Setter Property="Background" Value="Transparent" />
     <Setter Property="BorderThickness" Value="0" />
   </Style>
