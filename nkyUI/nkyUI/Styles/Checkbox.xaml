@@ -33,4 +33,8 @@
       </ControlTemplate>
     </Setter>
   </Style>
+  <Style Selector="CheckBox:pointerover /template/ Border#border">
+    <Setter Property="BorderBrush" Value="{StyleResource HighlightColorBrush}" />
+    <Setter Property="BorderThickness" Value="2" />
+  </Style>
 </Styles>
