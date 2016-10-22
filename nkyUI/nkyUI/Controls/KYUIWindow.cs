@@ -1,5 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.Presenters;
 using Avalonia.Controls.Primitives;
 using Avalonia.Input;
 using Avalonia.Styling;
@@ -153,6 +154,7 @@ namespace nkyUI.Controls
                 DialogContainer = e.NameScope.Find<Grid>("overlayDialogContainer"),
                 DialogTitleBlock = e.NameScope.Find<TextBlock>("overlayDialogTitle"),
                 DialogTextBlock = e.NameScope.Find<TextBlock>("overlayDialogText"),
+                DialogCustomContents = e.NameScope.Find<ContentPresenter>("overlayDialogCustomContents"),
             };
 
             topHorizontalGrip = e.NameScope.Find<Grid>("topHorizontalGrip");
