@@ -5,6 +5,19 @@ Neptunium kyUI - UI styles for Avalonia
 
 ![screenshot](img/demowindow.png)
 
+## Features
+
+### Available
+
+- Themes and Accent colors for theming your window
+- The most common controls have been themed
+- Basic overlay dialog support
+
+### Planned
+
+- Smooth, animated transitions (as soon as Avalonia supports XAML-defined animations)
+- More dialogs
+
 ## Using the theme - Quick Start
 
 First, reference the `nkyUI` library.
