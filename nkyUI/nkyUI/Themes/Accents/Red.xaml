@@ -9,10 +9,13 @@
     <SolidColorBrush x:Key="AccentBaseColorInverseNeutralBrush">#FFFDFDFD</SolidColorBrush>
 
     <SolidColorBrush x:Key="HighlightColorBrush">#FFA90E00</SolidColorBrush>
-
+    
     <SolidColorBrush x:Key="AccentColor">#CCE51400</SolidColorBrush>
     <SolidColorBrush x:Key="AccentColor2">#99E51400</SolidColorBrush>
     <SolidColorBrush x:Key="AccentColor3">#66E51400</SolidColorBrush>
     <SolidColorBrush x:Key="AccentColor4">#33E51400</SolidColorBrush>
+
+    <SolidColorBrush x:Key="AccentColorLight">#CCFF6F61</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentColorLight2">#99FF6F61</SolidColorBrush>
   </Style.Resources>
 </Style>

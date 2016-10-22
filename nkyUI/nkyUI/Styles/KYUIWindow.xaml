@@ -35,6 +35,9 @@
                       </StackPanel>
                       <!--Window Controls (Minimize, Maximize, Close)-->
                       <Grid Grid.Column="2" HorizontalAlignment="Right" Margin="5 4 0 5">
+                        <Grid.Styles>
+                          <StyleInclude Source="resm:nkyUI.Styles.WindowButtons.xaml?assembly=nkyUI" />
+                        </Grid.Styles>
                         <StackPanel Orientation="Horizontal">
                           <Button Background="Transparent" BorderThickness="0" Name="minimiseButton">
                             <Panel Margin="4">
