@@ -1,7 +1,9 @@
-﻿using nkyUI.Demo.Helpers;
+﻿using nkyUI.Controls.Dialogs;
+using nkyUI.Demo.Helpers;
 using ReactiveUI;
 using System;
 using System.Reactive.Linq;
+using System.Threading.Tasks;
 
 namespace nkyUI.Demo.VM
 {
@@ -12,13 +14,13 @@ namespace nkyUI.Demo.VM
         public MainWindowVM()
         {
             DoSomethingCoolCommand = ReactiveCommand.Create();
-            DoSomethingCoolCommand.Subscribe(_ => DoSomethingCool());
+            DoSomethingCoolCommand.Subscribe(_ => DoSomethingCool().GetAwaiter().GetResult());
         }
 
-        private void DoSomethingCool()
+        private async Task DoSomethingCool()
         {
             //Something cool should happen...
-            View.Window.ShowOverlay();
+            await View.Window.ShowMessageAsync("A popup!", "It's not very polished yet");
         }
     }
 }
