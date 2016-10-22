@@ -24,7 +24,7 @@ namespace nkyUI.Controls
         private Image iconImage;
         private Grid leftVerticalGrip;
         private Button minimizeButton;
-        private Grid overlayBox;
+        internal Grid overlayBox; //The overlay that is shown when ShowOverlay is called
 
         private bool mouseDown;
         private Point mouseDownPosition;
@@ -171,6 +171,12 @@ namespace nkyUI.Controls
         {
             overlayBox.Opacity = 1;
             overlayBox.ZIndex = 2;
+        }
+
+        public void HideOverlay()
+        {
+            overlayBox.Opacity = 0;
+            overlayBox.ZIndex = -1;
         }
     }
 }
