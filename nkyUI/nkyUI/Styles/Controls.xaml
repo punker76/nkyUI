@@ -3,4 +3,5 @@
   <!--Master styles for all nkyUI controls-->
   <StyleInclude Source="resm:nkyUI.Styles.KYUIWindow.xaml?assembly=nkyUI" />
   <StyleInclude Source="resm:nkyUI.Styles.ContentControl.xaml?assembly=nkyUI" />
+  <StyleInclude Source="resm:nkyUI.Styles.Button.xaml?assembly=nkyUI" />
 </Styles>
