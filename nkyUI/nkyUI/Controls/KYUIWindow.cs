@@ -19,7 +19,7 @@ namespace nkyUI.Controls
         private Button closeButton;
         private Panel icon;
         private Grid leftVerticalGrip;
-        private Button minimiseButton;
+        private Button minimizeButton;
 
         private bool mouseDown;
         private Point mouseDownPosition;
@@ -124,7 +124,7 @@ namespace nkyUI.Controls
         protected override void OnTemplateApplied(TemplateAppliedEventArgs e)
         {
             titleBar = e.NameScope.Find<Grid>("titlebar");
-            minimiseButton = e.NameScope.Find<Button>("minimiseButton");
+            minimizeButton = e.NameScope.Find<Button>("minimizeButton");
             restoreButton = e.NameScope.Find<Button>("restoreButton");
             closeButton = e.NameScope.Find<Button>("closeButton");
             icon = e.NameScope.Find<Panel>("icon");
@@ -139,7 +139,7 @@ namespace nkyUI.Controls
             topRightGrip = e.NameScope.Find<Grid>("topRightGrip");
             bottomRightGrip = e.NameScope.Find<Grid>("bottomRightGrip");
 
-            minimiseButton.Click += (sender, ee) => { WindowState = WindowState.Minimized; };
+            minimizeButton.Click += (sender, ee) => { WindowState = WindowState.Minimized; };
 
             restoreButton.Click += (sender, ee) => { ToggleWindowState(); };
 
