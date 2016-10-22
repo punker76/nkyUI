@@ -133,6 +133,7 @@ namespace nkyUI.Controls
 
                 case WindowState.Normal:
                     WindowState = WindowState.Maximized;
+                    //TODO: Make this not fullscreen
                     //Maximize the window
                     PseudoClasses.Add(":maximized");
                     break;
@@ -159,6 +160,7 @@ namespace nkyUI.Controls
                 NegativeButton = e.NameScope.Find<Button>("overlayDialogButtonNegative"),
                 AuxiliaryButton1 = e.NameScope.Find<Button>("overlayDialogButtonAux1"),
                 AuxiliaryButton2 = e.NameScope.Find<Button>("overlayDialogButtonAux2"),
+                Input = e.NameScope.Find<TextBox>("overlayDialogInput"),
             };
 
             topHorizontalGrip = e.NameScope.Find<Grid>("topHorizontalGrip");

@@ -22,6 +22,8 @@ namespace nkyUI.Demo.VM
             if (result == KYUIDialogResult.Affirmative)
             {
                 await View.Window.ShowMessageAsync("Great!", "Glad to hear it!");
+                var inputResult = await View.Window.ShowInputAsync("Input demo", "Please type something:");
+                await View.Window.ShowMessageAsync("You typed something!", $"You typed: \"{inputResult}\"");
             }
         }
     }

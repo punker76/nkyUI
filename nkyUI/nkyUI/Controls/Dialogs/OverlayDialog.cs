@@ -13,5 +13,6 @@ namespace nkyUI.Controls.Dialogs
         public Button NegativeButton { get; internal set; }
         public Button AuxiliaryButton1 { get; internal set; }
         public Button AuxiliaryButton2 { get; internal set; }
+        public TextBox Input { get; internal set; }
     }
 }
