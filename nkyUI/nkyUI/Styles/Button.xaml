@@ -5,6 +5,7 @@
     <Setter Property="Background" Value="{StyleResource AccentColor}" />
     <Setter Property="BorderBrush" Value="{StyleResource AccentColor4}" />
     <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Foreground" Value="{StyleResource ThemeForegroundBrush}" />
     <Setter Property="Template">
       <ControlTemplate>
         <ContentPresenter Name="PART_ContentPresenter"
