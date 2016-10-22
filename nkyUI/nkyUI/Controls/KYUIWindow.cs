@@ -24,6 +24,7 @@ namespace nkyUI.Controls
         private Image iconImage;
         private Grid leftVerticalGrip;
         private Button minimizeButton;
+        private Grid overlayBox;
 
         private bool mouseDown;
         private Point mouseDownPosition;
@@ -143,6 +144,7 @@ namespace nkyUI.Controls
             closeButton = e.NameScope.Find<Button>("closeButton");
             iconPanel = e.NameScope.Find<Panel>("iconPanel");
             iconImage = e.NameScope.Find<Image>("iconImage");
+            overlayBox = e.NameScope.Find<Grid>("overlayBox");
 
             topHorizontalGrip = e.NameScope.Find<Grid>("topHorizontalGrip");
             bottomHorizontalGrip = e.NameScope.Find<Grid>("bottomHorizontalGrip");
@@ -163,6 +165,12 @@ namespace nkyUI.Controls
             closeButton.Click += (sender, ee) => { Application.Current.Exit(); };
 
             iconPanel.DoubleTapped += (sender, ee) => { Close(); };
+        }
+
+        public void ShowOverlay()
+        {
+            overlayBox.Opacity = 1;
+            overlayBox.ZIndex = 2;
         }
     }
 }

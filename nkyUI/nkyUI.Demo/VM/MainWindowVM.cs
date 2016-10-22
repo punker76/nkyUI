@@ -18,6 +18,7 @@ namespace nkyUI.Demo.VM
         private void DoSomethingCool()
         {
             //Something cool should happen...
+            View.Window.ShowOverlay();
         }
     }
 }
