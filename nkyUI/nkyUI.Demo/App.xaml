@@ -4,7 +4,7 @@
 
 
     <StyleInclude Source="resm:nkyUI.Themes.BaseDark.xaml?assembly=nkyUI" />
-    <StyleInclude Source="resm:nkyUI.Themes.Accents.Red.xaml?assembly=nkyUI" />
+    <StyleInclude Source="resm:nkyUI.Themes.Accents.Blue.xaml?assembly=nkyUI" />
     <StyleInclude Source="resm:nkyUI.Styles.Controls.xaml?assembly=nkyUI" />
   </Application.Styles>
 </Application>

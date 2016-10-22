@@ -6,27 +6,27 @@
     <!--Brushes-->
 
     <!--The main accent color-->
-    <SolidColorBrush x:Key="AccentBaseColorBrush">#FFE51400</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentBaseColorBrush">#FF119EDA</SolidColorBrush>
 
     <!--A neutral color (black or white) that should be used against a background of the base accent color-->
     <SolidColorBrush x:Key="AccentBaseColorInverseNeutralBrush">#FFFDFDFD</SolidColorBrush>
 
     <!--A callout color-->
-    <SolidColorBrush x:Key="HighlightColorBrush">#FFA90E00</SolidColorBrush>
+    <SolidColorBrush x:Key="HighlightColorBrush">#FF086F9E</SolidColorBrush>
 
     <!--80%-->
-    <SolidColorBrush x:Key="AccentColor">#CCE51400</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentColor">#CC119EDA</SolidColorBrush>
     <!--60%-->
-    <SolidColorBrush x:Key="AccentColor2">#99E51400</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentColor2">#99119EDA</SolidColorBrush>
     <!--40%-->
-    <SolidColorBrush x:Key="AccentColor3">#66E51400</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentColor3">#66119EDA</SolidColorBrush>
     <!--20%-->
-    <SolidColorBrush x:Key="AccentColor4">#33E51400</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentColor4">#33119EDA</SolidColorBrush>
 
     <!--A lighter version of the base theme-->
     <!--80%-->
-    <SolidColorBrush x:Key="AccentColorLight">#CCFF6F61</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentColorLight">#CC74D4FC</SolidColorBrush>
     <!--60%-->
-    <SolidColorBrush x:Key="AccentColorLight2">#99FF6F61</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentColorLight2">#9974D4FC</SolidColorBrush>
   </Style.Resources>
 </Style>
