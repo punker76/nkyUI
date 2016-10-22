@@ -151,10 +151,14 @@ namespace nkyUI.Controls
 
             DialogHost = new OverlayDialog
             {
-                DialogContainer = e.NameScope.Find<Grid>("overlayDialogContainer"),
-                DialogTitleBlock = e.NameScope.Find<TextBlock>("overlayDialogTitle"),
-                DialogTextBlock = e.NameScope.Find<TextBlock>("overlayDialogText"),
-                DialogCustomContents = e.NameScope.Find<ContentPresenter>("overlayDialogCustomContents"),
+                Container = e.NameScope.Find<Grid>("overlayDialogContainer"),
+                TitleBlock = e.NameScope.Find<TextBlock>("overlayDialogTitle"),
+                TextBlock = e.NameScope.Find<TextBlock>("overlayDialogText"),
+                CustomContents = e.NameScope.Find<ContentPresenter>("overlayDialogCustomContents"),
+                AffirmativeButton = e.NameScope.Find<Button>("overlayDialogButtonAffirmative"),
+                NegativeButton = e.NameScope.Find<Button>("overlayDialogButtonNegative"),
+                AuxiliaryButton1 = e.NameScope.Find<Button>("overlayDialogButtonAux1"),
+                AuxiliaryButton2 = e.NameScope.Find<Button>("overlayDialogButtonAux2"),
             };
 
             topHorizontalGrip = e.NameScope.Find<Grid>("topHorizontalGrip");

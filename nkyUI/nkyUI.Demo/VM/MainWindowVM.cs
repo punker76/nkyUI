@@ -1,20 +1,18 @@
 ﻿using nkyUI.Controls.Dialogs;
 using nkyUI.Demo.Helpers;
 using ReactiveUI;
-using System;
-using System.Reactive.Linq;
+using System.Reactive;
 using System.Threading.Tasks;
 
 namespace nkyUI.Demo.VM
 {
     internal class MainWindowVM : WindowViewModel
     {
-        public ReactiveCommand<object> DoSomethingCoolCommand { get; }
+        public ReactiveCommand<Unit> DoSomethingCoolCommand { get; }
 
         public MainWindowVM()
         {
-            DoSomethingCoolCommand = ReactiveCommand.Create();
-            DoSomethingCoolCommand.Subscribe(_ => DoSomethingCool().GetAwaiter().GetResult());
+            DoSomethingCoolCommand = ReactiveCommand.CreateAsyncTask(_ => DoSomethingCool());
         }
 
         private async Task DoSomethingCool()

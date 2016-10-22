@@ -141,6 +141,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Dialogs\DialogFinishedException.cs" />
     <Compile Include="Controls\Dialogs\DialogManager.cs" />
     <Compile Include="Controls\Dialogs\KYUIDialogResult.cs" />
     <Compile Include="Controls\Dialogs\OverlayDialog.cs" />
