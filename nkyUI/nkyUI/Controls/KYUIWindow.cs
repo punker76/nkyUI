@@ -113,10 +113,14 @@ namespace nkyUI.Controls
             {
                 case WindowState.Maximized:
                     WindowState = WindowState.Normal;
+                    //Restore to normal size
+                    PseudoClasses.Remove(":maximized");
                     break;
 
                 case WindowState.Normal:
                     WindowState = WindowState.Maximized;
+                    //Maximize the window
+                    PseudoClasses.Add(":maximized");
                     break;
             }
         }

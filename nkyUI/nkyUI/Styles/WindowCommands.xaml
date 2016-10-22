@@ -1,4 +1,5 @@
 ﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:controls="clr-namespace:nkyUI.Controls;assembly=nkyUI"
         xmlns:local="clr-namespace:nkyUI.Styles;assembly=nkyUI">
   <!--WindowCommands control styles-->
   <Style Selector="Button">
