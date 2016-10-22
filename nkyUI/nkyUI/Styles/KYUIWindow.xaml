@@ -18,9 +18,8 @@
                       <Grid Margin="5 2.5 5 5">
                         <StackPanel Orientation="Horizontal">
                           <!--Icon-->
-                          <Panel Height="20" Width="20" Name="icon" Background="LightGray">
-                            <Image Source="{TemplateBinding Icon}" />
-                            <!--<Image Source="https://github.com/favicon.ico" />-->
+                          <Panel Height="20" Width="20" Name="iconPanel" Background="LightGray">
+                            <Image Name="iconImage" Source="{TemplateBinding IconImage}" Stretch="Fill" />
                           </Panel>
                           <!--Foreground: {TemplateBinding Foreground} ?-->
                           <TextBlock Text="{TemplateBinding Title}" Margin="20 6 5 0" Foreground="{StyleResource AccentBaseColorInverseNeutralBrush}" FontWeight="SemiBold" />

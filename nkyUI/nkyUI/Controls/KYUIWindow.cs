@@ -13,11 +13,15 @@ namespace nkyUI.Controls
         public static readonly AvaloniaProperty<Control> WindowCommandsProperty =
             AvaloniaProperty.Register<KYUIWindow, Control>(nameof(WindowCommands));
 
+        public static readonly AvaloniaProperty<Image> IconImageProperty =
+            AvaloniaProperty.Register<KYUIWindow, Image>(nameof(IconImage));
+
         private Grid bottomHorizontalGrip;
         private Grid bottomLeftGrip;
         private Grid bottomRightGrip;
         private Button closeButton;
-        private Panel icon;
+        private Panel iconPanel;
+        private Image iconImage;
         private Grid leftVerticalGrip;
         private Button minimizeButton;
 
@@ -35,6 +39,12 @@ namespace nkyUI.Controls
         {
             get { return GetValue(WindowCommandsProperty); }
             set { SetValue(WindowCommandsProperty, value); }
+        }
+
+        public Image IconImage
+        {
+            get { return GetValue(IconImageProperty); }
+            set { SetValue(IconImageProperty, value); }
         }
 
         Type IStyleable.StyleKey => typeof(KYUIWindow);
@@ -131,7 +141,8 @@ namespace nkyUI.Controls
             minimizeButton = e.NameScope.Find<Button>("minimizeButton");
             restoreButton = e.NameScope.Find<Button>("restoreButton");
             closeButton = e.NameScope.Find<Button>("closeButton");
-            icon = e.NameScope.Find<Panel>("icon");
+            iconPanel = e.NameScope.Find<Panel>("iconPanel");
+            iconImage = e.NameScope.Find<Image>("iconImage");
 
             topHorizontalGrip = e.NameScope.Find<Grid>("topHorizontalGrip");
             bottomHorizontalGrip = e.NameScope.Find<Grid>("bottomHorizontalGrip");
@@ -151,7 +162,7 @@ namespace nkyUI.Controls
 
             closeButton.Click += (sender, ee) => { Application.Current.Exit(); };
 
-            icon.DoubleTapped += (sender, ee) => { Close(); };
+            iconPanel.DoubleTapped += (sender, ee) => { Close(); };
         }
     }
 }
