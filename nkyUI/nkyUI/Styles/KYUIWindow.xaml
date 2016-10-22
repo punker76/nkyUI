@@ -74,11 +74,11 @@
                             <!--Dialog buttons-->
                             <Grid HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,10">
                               <StackPanel Orientation="Horizontal">
-                                <Button Name="overlayDialogButtonAffirmative" Content="OK" MinWidth="60" />
+                                <Button Name="overlayDialogButtonAffirmative" Content="OK" MinWidth="60" Margin="0,0,10,0" />
                                 <!--These buttons are hidden by default-->
-                                <Button Name="overlayDialogButtonNegative" Content="Cancel" Opacity="0" />
-                                <Button Name="overlayDialogButtonAux1" Opacity="0" />
-                                <Button Name="overlayDialogButtonAux2" Opacity="0" />
+                                <Button Name="overlayDialogButtonNegative" Content="Cancel" MinWidth="60" Margin="0,0,10,0" Opacity="0" />
+                                <Button Name="overlayDialogButtonAux1" Margin="0,0,10,0" Opacity="0" />
+                                <Button Name="overlayDialogButtonAux2" Margin="0,0,10,0" Opacity="0" />
                               </StackPanel>
                             </Grid>
                           </Grid>

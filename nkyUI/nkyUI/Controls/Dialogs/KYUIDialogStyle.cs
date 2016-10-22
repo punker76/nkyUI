@@ -1,8 +1,8 @@
 ﻿namespace nkyUI.Controls.Dialogs
 {
-    public enum KYUIDialogResult
+    public enum KYUIDialogStyle
     {
         Affirmative,
-        Negative
+        AffirmativeAndNegative,
     }
 }
