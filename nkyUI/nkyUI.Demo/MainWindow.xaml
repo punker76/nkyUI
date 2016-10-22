@@ -14,5 +14,6 @@
         <TextBlock>Hello world!</TextBlock>
         <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,25,0,0" />
         <CheckBox Content="A Checkbox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,60,0,0" />
+        <TextBox Text="This is a text box" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,90,0,0" />
     </Grid>
 </kControls:KYUIWindow>

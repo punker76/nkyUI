@@ -1,0 +1,84 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:local="clr-namespace:nkyUI.Styles;assembly=nkyUI">
+  <!--Button control styles-->
+  <Style Selector="TextBox">
+    <Setter Property="Background" Value="{StyleResource ThemeBackgroundBrush}" />
+    <Setter Property="BorderBrush" Value="{StyleResource AccentColor4}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Foreground" Value="{StyleResource AccentBaseColorInverseNeutralBrush}" />
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Name="border"
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+          <DockPanel Margin="{TemplateBinding Padding}">
+
+            <TextBlock Name="floatingWatermark"
+                       Foreground="{StyleResource ThemeAccentBrush}"
+                       FontSize="{StyleResource FontSizeSmall}"
+                       Text="{TemplateBinding Watermark}"
+                       DockPanel.Dock="Top">
+              <TextBlock.IsVisible>
+                <MultiBinding Converter="{Static BoolConverters.And}">
+                  <Binding RelativeSource="{RelativeSource TemplatedParent}"
+                           Path="UseFloatingWatermark" />
+                  <Binding RelativeSource="{RelativeSource TemplatedParent}"
+                           Path="Text"
+                           Converter="{Static StringConverters.NotNullOrEmpty}" />
+                </MultiBinding>
+              </TextBlock.IsVisible>
+            </TextBlock>
+
+            <DockPanel LastChildFill="True">
+              <Canvas Name="error" DockPanel.Dock="Right" Width="14" Height="14" Margin="4 0 1 0">
+                <ToolTip.Tip>
+                  <ItemsControl Items="{TemplateBinding DataValidationErrors}" MemberSelector="Message" />
+                </ToolTip.Tip>
+                <Path Data="M14,7 A7,7 0 0,0 0,7 M0,7 A7,7 0 1,0 14,7 M7,3l0,5 M7,9l0,2" Stroke="{StyleResource ErrorBrush}" StrokeThickness="2" />
+              </Canvas>
+
+              <ScrollViewer CanScrollHorizontally="{TemplateBinding CanScrollHorizontally}"
+                            HorizontalScrollBarVisibility="{TemplateBinding (ScrollViewer.HorizontalScrollBarVisibility)}"
+                            VerticalScrollBarVisibility="{TemplateBinding (ScrollViewer.VerticalScrollBarVisibility)}">
+
+                <Panel>
+                  <TextBlock Name="watermark"
+                             Opacity="0.5"
+                             Text="{TemplateBinding Watermark}"
+                             IsVisible="{TemplateBinding Path=Text, Converter={Static StringConverters.NullOrEmpty}}" />
+                  <TextPresenter Name="PART_TextPresenter"
+                                 CaretIndex="{TemplateBinding CaretIndex}"
+                                 SelectionStart="{TemplateBinding SelectionStart}"
+                                 SelectionEnd="{TemplateBinding SelectionEnd}"
+                                 Text="{TemplateBinding Text, Mode=TwoWay}"
+                                 TextAlignment="{TemplateBinding TextAlignment}"
+                                 TextWrapping="{TemplateBinding TextWrapping}" />
+                </Panel>
+              </ScrollViewer>
+            </DockPanel>
+          </DockPanel>
+        </Border>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+  <Style Selector="TextBox:pointerover /template/ Border#border">
+    <Setter Property="BorderBrush" Value="{StyleResource AccentColor3}" />
+  </Style>
+  <Style Selector="TextBox:focus /template/ Border#border">
+    <Setter Property="BorderBrush" Value="{StyleResource HighlightColorBrush}" />
+  </Style>
+  <Style Selector="TextBox:error /template/ Border#border">
+    <Setter Property="BorderBrush" Value="{StyleResource ErrorBrush}" />
+  </Style>
+  <Style Selector="TextBox /template/ Canvas#error">
+    <Setter Property="IsVisible" Value="False" />
+  </Style>
+  <Style Selector="TextBox:error /template/ Canvas#error">
+    <Setter Property="IsVisible" Value="True" />
+  </Style>
+  <Style Selector="TextBox /template/ ToolTip">
+    <Setter Property="Background" Value="{StyleResource ErrorBrushLight}" />
+    <Setter Property="BorderBrush" Value="{StyleResource ErrorBrush}" />
+  </Style>
+</Styles>
