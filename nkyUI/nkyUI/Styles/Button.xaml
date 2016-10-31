@@ -3,6 +3,7 @@
   <!--Button control styles-->
   <Style Selector="Button">
     <Setter Property="Background" Value="{StyleResource AccentColor}" />
+    <Setter Property="Padding" Value="16,4,16,4" />
     <Setter Property="BorderBrush" Value="{StyleResource AccentColor4}" />
     <Setter Property="BorderThickness" Value="1" />
     <Setter Property="Foreground" Value="{StyleResource AccentBaseColorInverseNeutralBrush}" />
@@ -24,7 +25,7 @@
   </Style>
   <Style Selector="Button:pointerover /template/ ContentPresenter">
     <Setter Property="BorderBrush" Value="{StyleResource HighlightColorBrush}" />
-    <Setter Property="BorderThickness" Value="2" />
+    <Setter Property="BorderThickness" Value="1" />
   </Style>
   <Style Selector="Button:pressed  /template/ ContentPresenter">
     <Setter Property="Background" Value="{StyleResource AccentColor2}" />
