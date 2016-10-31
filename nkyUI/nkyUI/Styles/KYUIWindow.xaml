@@ -34,7 +34,7 @@
                         </ContentPresenter>
                       </StackPanel>
                       <!--Window Controls (Minimize, Restore, Close)-->
-                      <Grid Grid.Column="2" HorizontalAlignment="Right" Margin="5 4 0 5">
+                      <Grid Grid.Column="2" HorizontalAlignment="Right" Margin="5 4 5 5">
                         <Grid.Styles>
                           <StyleInclude Source="resm:nkyUI.Styles.WindowButtons.xaml?assembly=nkyUI" />
                         </Grid.Styles>
