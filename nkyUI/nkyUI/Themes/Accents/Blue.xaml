@@ -17,6 +17,8 @@
 
     <!--80%-->
     <SolidColorBrush x:Key="AccentColor">#CC119EDA</SolidColorBrush>
+    <!--75%-->
+    <SolidColorBrush x:Key="AccentColor1">#BB119EDA</SolidColorBrush>
     <!--60%-->
     <SolidColorBrush x:Key="AccentColor2">#99119EDA</SolidColorBrush>
     <!--40%-->
