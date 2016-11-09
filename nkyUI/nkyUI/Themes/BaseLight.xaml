@@ -4,7 +4,7 @@
        xmlns:sys="clr-namespace:System;assembly=mscorlib">
   <Style.Resources>
 
-    <SolidColorBrush x:Key="ThemeBackgroundBrush">#FDFDFDFF</SolidColorBrush>
+    <SolidColorBrush x:Key="ThemeBackgroundBrush">#FAFAFAFF</SolidColorBrush>
     <SolidColorBrush x:Key="ThemeBorderLightBrush">#FFAAAAAA</SolidColorBrush>
     <SolidColorBrush x:Key="ThemeBorderMidBrush">#FF888888</SolidColorBrush>
     <SolidColorBrush x:Key="ThemeBorderDarkBrush">#FF333333</SolidColorBrush>
