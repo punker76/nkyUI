@@ -14,7 +14,7 @@
                 <Grid Grid.Row="1" Margin="-4" Grid.Column="0" Grid.ColumnSpan="5" Background="{TemplateBinding Background}">
                   <Grid Margin="4 0" RowDefinitions="Auto, *">
                     <!--TitleBar-->
-                    <Grid ColumnDefinitions="Auto,*,100" Name="titlebar" Background="{StyleResource AccentBaseColorBrush}">
+                    <Grid ColumnDefinitions="Auto,*,Auto" Name="titlebar" Background="{StyleResource AccentBaseColorBrush}">
                       <Grid Margin="5 2.5 5 5">
                         <StackPanel Orientation="Horizontal">
                           <!--Icon-->
@@ -34,7 +34,7 @@
                         </ContentPresenter>
                       </StackPanel>
                       <!--Window Controls (Minimize, Restore, Close)-->
-                      <Grid Grid.Column="2" HorizontalAlignment="Right" Margin="5 4 5 5">
+                      <Grid Name="windowControls" Grid.Column="2" HorizontalAlignment="Right" Margin="5 4 5 5" Width="100">
                         <Grid.Styles>
                           <StyleInclude Source="resm:nkyUI.Styles.WindowButtons.xaml?assembly=nkyUI" />
                         </Grid.Styles>

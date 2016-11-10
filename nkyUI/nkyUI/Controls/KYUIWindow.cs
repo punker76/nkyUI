@@ -35,9 +35,12 @@ namespace nkyUI.Controls
         private Grid rightVerticalGrip;
 
         private Grid titleBar;
+        private Grid windowControls;
         private Grid topHorizontalGrip;
         private Grid topLeftGrip;
         private Grid topRightGrip;
+
+        private bool systemStyles = false;
 
         public Control WindowCommands
         {
@@ -173,6 +176,8 @@ namespace nkyUI.Controls
             topRightGrip = e.NameScope.Find<Grid>("topRightGrip");
             bottomRightGrip = e.NameScope.Find<Grid>("bottomRightGrip");
 
+            windowControls = e.NameScope.Find<Grid>("windowControls");
+
             minimizeButton.Click += (sender, ee) => { WindowState = WindowState.Minimized; };
 
             restoreButton.Click += (sender, ee) => { ToggleWindowState(); };
@@ -181,7 +186,7 @@ namespace nkyUI.Controls
 
             closeButton.Click += (sender, ee) => { Application.Current.Exit(); };
 
-            iconPanel.DoubleTapped += (sender, ee) => { Close(); };
+            iconPanel.DoubleTapped += (sender, ee) => { /*Close();*/ ToggleSystemStyles(); };
         }
 
         public void ShowOverlay()
@@ -194,6 +199,41 @@ namespace nkyUI.Controls
         {
             overlayBox.Opacity = 0;
             overlayBox.ZIndex = -1;
+        }
+
+        //Optional helpers
+
+        /// <summary>
+        /// Disable the KYUI Window border and use the system border
+        /// </summary>
+        public void EnableSystemStyles()
+        {
+            HasSystemDecorations = true;
+            windowControls.Width = 0;
+            windowControls.Bury();
+        }
+
+        /// <summary>
+        /// Use the KYUI Window border/styles
+        /// </summary>
+        public void DisableSystemStyles()
+        {
+            HasSystemDecorations = false;
+            windowControls.Resurface();
+            windowControls.Width = 100;
+        }
+
+        public void ToggleSystemStyles()
+        {
+            if (systemStyles)
+            {
+                DisableSystemStyles();
+            }
+            else
+            {
+                EnableSystemStyles();
+            }
+            systemStyles = !systemStyles;
         }
     }
 }
