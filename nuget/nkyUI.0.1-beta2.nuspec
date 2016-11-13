@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>nkyUI</id>
-        <version>0.1-beta1</version>
+        <version>0.1-beta2</version>
         <title>nkyUI for Avalonia</title>
         <authors>0xFireball</authors>
         <owners>0xFireball</owners>
@@ -11,10 +11,10 @@
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>nkyUI is a modern UI theme for Avalonia</description>
         <summary>nkyUI for Avalonia</summary>
-        <releaseNotes>First beta release!</releaseNotes>
+        <releaseNotes>This beta release improves some of the themes included by default. Some coloring issues have also been fixed.</releaseNotes>
         <copyright>Copyright © 0xFireball, IridiumIon Software 2016</copyright>
         <language>en-US</language>
-        <tags>Avalonia, XAML, Theme</tags>
+        <tags>Avalonia, XAML, Theme, AvaloniaUI, Metro, MetroWindow</tags>
         <dependencies>
             <group targetFramework=".NETFramework4.5.2">
                 <dependency id="Avalonia" version="0.4.0" />
