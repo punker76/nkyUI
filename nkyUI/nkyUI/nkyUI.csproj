@@ -235,6 +235,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Themes\KYUIStyle.cs" />
+    <Compile Include="Themes\ThemeManager.cs" />
     <Compile Include="Util\ControlVisibilityHelper.cs" />
     <Compile Include="Controls\KYUIWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
