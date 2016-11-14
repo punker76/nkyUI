@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 
-namespace nkyUI.Controls.Dialogs
+namespace nkyUI.Util
 {
     public static class ControlVisibilityHelper
     {

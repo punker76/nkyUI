@@ -1,5 +1,4 @@
-﻿using nkyUI.Controls.Dialogs;
-using nkyUI.Demo.Helpers;
+﻿using nkyUI.Demo.Helpers;
 using ReactiveUI;
 using System.Reactive;
 using System.Threading.Tasks;
@@ -18,13 +17,6 @@ namespace nkyUI.Demo.VM
         private async Task DoSomethingCool()
         {
             //Something cool should happen...
-            var result = await View.Window.ShowMessageAsync("A popup!", "It's not very polished yet. Do you want to continue?", KYUIDialogStyle.AffirmativeAndNegative);
-            if (result == KYUIDialogResult.Affirmative)
-            {
-                await View.Window.ShowMessageAsync("Great!", "Glad to hear it!");
-                var inputResult = await View.Window.ShowInputAsync("Input demo", "Please type something:");
-                await View.Window.ShowMessageAsync("You typed something!", $"You typed: \"{inputResult}\"");
-            }
         }
     }
 }

@@ -4,7 +4,6 @@ using Avalonia.Controls.Presenters;
 using Avalonia.Controls.Primitives;
 using Avalonia.Input;
 using Avalonia.Styling;
-using nkyUI.Controls.Dialogs;
 using nkyUI.Util;
 using System;
 
@@ -27,7 +26,6 @@ namespace nkyUI.Controls
         private Grid leftVerticalGrip;
         private Button minimizeButton;
         internal Grid overlayBox; //The overlay that is shown when ShowOverlay is called
-        public OverlayDialog DialogHost { get; private set; }
 
         private bool mouseDown;
         private Point mouseDownPosition;
@@ -152,19 +150,6 @@ namespace nkyUI.Controls
             iconPanel = e.NameScope.Find<Panel>("iconPanel");
             iconImage = e.NameScope.Find<Image>("iconImage");
             overlayBox = e.NameScope.Find<Grid>("overlayBox");
-
-            DialogHost = new OverlayDialog
-            {
-                Container = e.NameScope.Find<Grid>("overlayDialogContainer"),
-                TitleBlock = e.NameScope.Find<TextBlock>("overlayDialogTitle"),
-                TextBlock = e.NameScope.Find<TextBlock>("overlayDialogText"),
-                CustomContents = e.NameScope.Find<ContentPresenter>("overlayDialogCustomContents"),
-                AffirmativeButton = e.NameScope.Find<Button>("overlayDialogButtonAffirmative"),
-                NegativeButton = e.NameScope.Find<Button>("overlayDialogButtonNegative"),
-                AuxiliaryButton1 = e.NameScope.Find<Button>("overlayDialogButtonAux1"),
-                AuxiliaryButton2 = e.NameScope.Find<Button>("overlayDialogButtonAux2"),
-                Input = e.NameScope.Find<TextBox>("overlayDialogInput"),
-            };
 
             topHorizontalGrip = e.NameScope.Find<Grid>("topHorizontalGrip");
             bottomHorizontalGrip = e.NameScope.Find<Grid>("bottomHorizontalGrip");
