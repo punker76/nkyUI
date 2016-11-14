@@ -20,6 +20,9 @@ namespace nkyUI.Demo
             InitializeLogging();
             AppBuilder.Configure<App>()
                 .UsePlatformDetect()
+#if !AnyCPU
+                .UseSkia()
+#endif
                 .Start<MainWindow>();
         }
 
