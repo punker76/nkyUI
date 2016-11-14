@@ -9,15 +9,15 @@
         <licenseUrl>https://raw.githubusercontent.com/0xFireball/nkyUI/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/0xFireball/nkyUI</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>nkyUI is a modern UI theme for Avalonia</description>
+        <description>nkyUI is a modern UI theme for Avalonia. You must be using Avalonia Nightly: https://github.com/AvaloniaUI/Avalonia/wiki/Using-nightly-build-feed</description>
         <summary>nkyUI for Avalonia</summary>
         <releaseNotes>This beta release improves some of the themes included by default. Some coloring issues have also been fixed.</releaseNotes>
         <copyright>Copyright © 0xFireball, IridiumIon Software 2016</copyright>
         <language>en-US</language>
         <tags>Avalonia, XAML, Theme, AvaloniaUI, Metro, MetroWindow</tags>
         <dependencies>
-            <group targetFramework=".NETFramework4.5.2">
-                <dependency id="Avalonia" version="0.4.0" />
+            <group targetFramework=".NETFramework4.6.1">
+                <dependency id="Avalonia" version="0.4.1-build2337-alpha" />
             </group>
         </dependencies>
     </metadata>
