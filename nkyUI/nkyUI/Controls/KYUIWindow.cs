@@ -1,6 +1,5 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Controls.Presenters;
 using Avalonia.Controls.Primitives;
 using Avalonia.Input;
 using Avalonia.Styling;
@@ -21,7 +20,6 @@ namespace nkyUI.Controls
         private Grid bottomLeftGrip;
         private Grid bottomRightGrip;
         private Button closeButton;
-        private Panel iconPanel;
         private Image icon;
         private Grid leftVerticalGrip;
         private Button minimizeButton;
@@ -170,7 +168,7 @@ namespace nkyUI.Controls
 
             closeButton.Click += (sender, ee) => { Application.Current.Exit(); };
 
-            iconPanel.DoubleTapped += (sender, ee) => { /*Close();*/ ToggleSystemStyles(); };
+            //icon.DoubleTapped += (sender, ee) => { /*Close();*/ ToggleSystemStyles(); };
         }
 
         public void ShowOverlay()
