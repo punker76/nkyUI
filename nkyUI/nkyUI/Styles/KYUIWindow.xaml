@@ -1,4 +1,6 @@
-﻿<Styles xmlns="https://github.com/avaloniaui" xmlns:controls="clr-namespace:nkyUI.Controls;assembly=nkyUI">
+﻿<Styles xmlns="https://github.com/avaloniaui" 
+        xmlns:controls="clr-namespace:nkyUI.Controls;assembly=nkyUI"
+        xmlns:convert="clr-namespace:nkyUI.Converters;assembly=nkyUI">
   <Style Selector="controls|KYUIWindow">
     <Setter Property="Background" Value="{StyleResource ThemeBackgroundBrush}" />
     <Setter Property="Foreground" Value="{StyleResource ThemeForegroundBrush}" />
@@ -16,11 +18,9 @@
                     <!--TitleBar-->
                     <Grid ColumnDefinitions="Auto,*,Auto" Name="titlebar" Background="{StyleResource AccentBaseColorBrush}">
                       <Grid Margin="5 2.5 5 5">
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Gap="10">
                           <!--Icon-->
-                          <Panel Height="20" Width="20" Name="iconPanel" Background="LightGray">
-                            <Image Name="iconImage" Source="{TemplateBinding IconImage}" Stretch="Fill" />
-                          </Panel>
+                          <Image Width="32" Height="32" Name="icon" Source="{TemplateBinding Icon, Converter={Static convert:IconImageConverter.Converter}}" Stretch="Fill" />
                           <!--Foreground: {TemplateBinding Foreground} ?-->
                           <TextBlock Text="{TemplateBinding Title}" Margin="20 6 5 0" Foreground="{StyleResource AccentBaseColorInverseNeutralBrush}" FontWeight="SemiBold" />
                         </StackPanel>

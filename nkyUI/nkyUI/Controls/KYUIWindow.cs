@@ -22,7 +22,7 @@ namespace nkyUI.Controls
         private Grid bottomRightGrip;
         private Button closeButton;
         private Panel iconPanel;
-        private Image iconImage;
+        private Image icon;
         private Grid leftVerticalGrip;
         private Button minimizeButton;
         internal Grid overlayBox; //The overlay that is shown when ShowOverlay is called
@@ -147,8 +147,7 @@ namespace nkyUI.Controls
             minimizeButton = e.NameScope.Find<Button>("minimizeButton");
             restoreButton = e.NameScope.Find<Button>("restoreButton");
             closeButton = e.NameScope.Find<Button>("closeButton");
-            iconPanel = e.NameScope.Find<Panel>("iconPanel");
-            iconImage = e.NameScope.Find<Image>("iconImage");
+            icon = e.NameScope.Find<Image>("icon");
             overlayBox = e.NameScope.Find<Grid>("overlayBox");
 
             topHorizontalGrip = e.NameScope.Find<Grid>("topHorizontalGrip");

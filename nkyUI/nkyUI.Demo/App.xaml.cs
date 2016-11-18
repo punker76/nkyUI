@@ -4,6 +4,7 @@ using Avalonia.Diagnostics;
 using Avalonia.Logging.Serilog;
 using Avalonia.Markup.Xaml;
 using Serilog;
+using System;
 
 namespace nkyUI.Demo
 {
@@ -18,12 +19,27 @@ namespace nkyUI.Demo
         private static void Main(string[] args)
         {
             InitializeLogging();
-            AppBuilder.Configure<App>()
-                .UsePlatformDetect()
+            var builder = AppBuilder.Configure<App>();
 #if !AnyCPU
-                .UseSkia()
+            if (args.Length >= 1 && args[0] == "--skia")
+            {
+                builder.UseSkia();
+
+                if (Environment.OSVersion.Platform == PlatformID.Win32NT)
+                {
+                    builder.UseWin32();
+                }
+                else
+                {
+                    builder.UseGtk();
+                }
+            }
 #endif
-                .Start<MainWindow>();
+            else
+            {
+                builder.UsePlatformDetect();
+            }
+            builder.Start<MainWindow>();
         }
 
         public static void AttachDevTools(Window window)
