@@ -18,7 +18,8 @@ namespace nkyUI.Converters
             if (value is WindowIcon)
             {
                 var windowIcon = value as WindowIcon;
-                return new Bitmap(windowIcon.Save());
+                return null;
+                // return new Bitmap(windowIcon.Save());
             }
 
             return null;
